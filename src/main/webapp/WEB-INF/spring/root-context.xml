@@ -1,8 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.0.xsd">
 	
 	<!-- Root Context: defines shared resources visible to all other web components -->
-		
+	
+	<!-- 
+	<util:list id="listEtapeA">
+		<ref bean="encoderX"/>
+		<ref bean="encoderX"/>
+		<ref bean="encoderX"/>
+		<ref bean="encoderX"/>
+		<ref bean="encoderX"/>
+		<ref bean="encoderX"/>
+	</util:list>
+	 -->
+	
+	<!--
+	!!! Solution !!
+	 -->
+	<util:list id="listEtapeA">
+		<ref bean="encoder2"/>
+		<ref bean="encoder2"/>
+		<ref bean="encoder1"/>
+		<ref bean="encoder2"/>
+		<ref bean="encoder3"/>
+		<ref bean="encoder4"/>
+	</util:list>
+	
+	<bean id="encoder1" class="fr.ippon.rh.permut.impl.EncodeService1"></bean>
+	<bean id="encoder2" class="fr.ippon.rh.permut.impl.EncodeService2"></bean>
+	<bean id="encoder3" class="fr.ippon.rh.permut.impl.EncodeService3"></bean>
+	<bean id="encoder4" class="fr.ippon.rh.permut.impl.EncodeService4"></bean>
+	<bean id="encoderX" class="fr.ippon.rh.permut.impl.EncodeServiceIdempotent"></bean>
+	
 </beans>
