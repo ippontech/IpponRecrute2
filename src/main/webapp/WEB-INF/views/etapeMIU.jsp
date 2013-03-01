@@ -7,7 +7,7 @@ Connaissez-vous le bouquin "Gödel, Escher, Bach : les brins d'une guirlande éter
 <br>
 Il s'agit de 777 pages de mathématique, d'algo, de dessins étranges, de jeux de langage, de théorie musicale... Pas du plus simple accès mais extrèmement intéressant.
 <br>
-Tout ceux qui sont arrivés au bout sont super fier d'eux... ;-)
+Tout ceux qui sont arrivés au bout reste fier d'eux très longtemps ;-)
 </p>
 <p>
 Au début du livre, l'auteur pose une petit énigme basée sur un système simple : 

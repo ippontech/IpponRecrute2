@@ -32,7 +32,8 @@ public class IpponController {
     
     @RequestMapping(value = "/etapeA", method = RequestMethod.GET)
     public String etapeA(Model model) {
-    	model.addAttribute("texte", etapeAService.decriptTextAfterMIUPuzzle());
+    	String text = etapeAService.decriptTextAfterMIUPuzzle();
+		model.addAttribute("texte", text);
     	return "etapeA";
     }
 }
