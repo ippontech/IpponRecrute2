@@ -13,7 +13,8 @@ public class MIUCodeGenerator {
 			.applyRule1()
 			.applyRule2()
 			.applyRule3()
-			.applyRule4();
+			.applyRule4()
+			;
 		String solution = builder.getFinalString();
 		String code = builder.getFinalCode();
 

@@ -21,11 +21,33 @@ public class MIUBuilder {
 	
 	private String current;
 	private String code;
+	private boolean printCurrent = true;
 	public MIUBuilder(String base) {
 		this.current = base;
 		this.code = "";
 	}
 	
+	public MIUBuilder printCurrent(boolean printCurrent) {
+		this.printCurrent = printCurrent;
+		return this;
+	}
+	
+	public static String applyRule(int ruleNum, String base)  throws InvalidMIURuleApplication {
+		switch (ruleNum) {
+		case 1:
+			return applyRule1(base);
+		case 2:
+			return applyRule2(base);
+		case 3:
+			return applyRule3(base);
+		case 4:
+			return applyRule4(base);
+		}
+		return "";
+	}
+	public static String applyRule1(String base)  throws InvalidMIURuleApplication {
+		return new MIUBuilder(base).printCurrent(false).applyRule1().getFinalString();
+	}
 	public MIUBuilder applyRule1()  throws InvalidMIURuleApplication {
 //	    xI → xIU
 		if(current.endsWith("I")) {
@@ -34,11 +56,20 @@ public class MIUBuilder {
 			throw new InvalidMIURuleApplication(current,1);
 			// nop
 		}
-		System.out.println("current : "+current);
+		printCurrent();
 		code += "1";
 		return this;
 	}
+
+	private void printCurrent() {
+		if(printCurrent) {
+			System.out.println("current : "+current);
+		}
+	}
 	
+	public static String applyRule2(String base)  throws InvalidMIURuleApplication {
+		return new MIUBuilder(base).printCurrent(false).applyRule2().getFinalString();
+	}
 	public MIUBuilder applyRule2() throws InvalidMIURuleApplication {
 //	    Mx → Mxx
 		if(current.startsWith("M")) {
@@ -47,9 +78,13 @@ public class MIUBuilder {
 			throw new InvalidMIURuleApplication(current,2);
 			// nop
 		}
-		System.out.println("current : "+current);
+		printCurrent();
 		code += "2";
 		return this;
+	}
+	
+	public static String applyRule3(String base)  throws InvalidMIURuleApplication {
+		return new MIUBuilder(base).printCurrent(false).applyRule3().getFinalString();
 	}
 	public MIUBuilder applyRule3() throws InvalidMIURuleApplication {
 //	    xIIIy → xUy
@@ -59,9 +94,13 @@ public class MIUBuilder {
 			throw new InvalidMIURuleApplication(current,3);
 			// nop
 		}
-		System.out.println("current : "+current);
+		printCurrent();
 		code += "3";
 		return this;
+	}
+	
+	public static String applyRule4(String base)  throws InvalidMIURuleApplication {
+		return new MIUBuilder(base).printCurrent(false).applyRule4().getFinalString();
 	}
 	public MIUBuilder applyRule4() throws InvalidMIURuleApplication {
 //	    xUUy → xy
@@ -71,7 +110,7 @@ public class MIUBuilder {
 			throw new InvalidMIURuleApplication(current,4);
 			// nop
 		}
-		System.out.println("current : "+current);
+		printCurrent();
 		code += "4";
 		return this;
 	}
