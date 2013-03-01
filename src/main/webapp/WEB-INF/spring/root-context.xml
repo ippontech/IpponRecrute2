@@ -9,6 +9,7 @@ http://www.springframework.org/schema/util http://www.springframework.org/schema
 	<!-- Root Context: defines shared resources visible to all other web components -->
 	
 	<!-- 
+	 -->
 	<util:list id="listEtapeA">
 		<ref bean="encoderX"/>
 		<ref bean="encoderX"/>
@@ -16,12 +17,20 @@ http://www.springframework.org/schema/util http://www.springframework.org/schema
 		<ref bean="encoderX"/>
 		<ref bean="encoderX"/>
 		<ref bean="encoderX"/>
+		<ref bean="encoderX"/>
+		<ref bean="encoderX"/>
+		<ref bean="encoderX"/>
+		<ref bean="encoderX"/>
+		<ref bean="encoderX"/>
+		<ref bean="encoderX"/>
+		<ref bean="encoderX"/>
+		<ref bean="encoderX"/>
+		<ref bean="encoderX"/>
+		<ref bean="encoderX"/>
 	</util:list>
-	 -->
 	
 	<!--
 	!!! Solution !!
-	 -->
 	<util:list id="listEtapeA">
 		<ref bean="encoder2"/>
 		<ref bean="encoder2"/>
@@ -30,6 +39,7 @@ http://www.springframework.org/schema/util http://www.springframework.org/schema
 		<ref bean="encoder3"/>
 		<ref bean="encoder4"/>
 	</util:list>
+	 -->
 	
 	<bean id="encoder1" class="fr.ippon.rh.permut.impl.EncodeService1"></bean>
 	<bean id="encoder2" class="fr.ippon.rh.permut.impl.EncodeService2"></bean>

@@ -18,14 +18,14 @@ public class EtapeAService {
 	List<EncodeService> encodeServicesSequence;
 	
     public String decriptTextAfterMIUPuzzle() {
-    	
+    
     	String text;
 		try {
 			text = IOUtils.toString(this.getClass().getResource("etapeAToDecode.txt"));
 		} catch (IOException e) {			
 			throw new RuntimeException("oups",e);
 		}
-    	for(EncodeService s : (List<EncodeService>)encodeServicesSequence) {
+    	for(EncodeService s : encodeServicesSequence) {
     		text = s.decode(text);
     	}
         return text;
@@ -35,7 +35,7 @@ public class EtapeAService {
     @Inject
     @Named("listEtapeA")
     // rq : pour injecter une liste, il faut tricher avec Spring sinon
-    // il essaye d'injecter la liste des beans du type demandé plutôt que la liste fabriquée 
+    // il essaye d'injecter la liste des beans du type demandé plutôt que la liste fabriquée ...
 	public void setEncodeServicesSequence(Object encodeServicesSequence) {
 		this.encodeServicesSequence = (List<EncodeService>)encodeServicesSequence;
 	}
