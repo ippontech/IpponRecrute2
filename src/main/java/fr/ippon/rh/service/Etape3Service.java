@@ -21,7 +21,7 @@ public class Etape3Service {
     
     	String text;
 		try {
-			text = IOUtils.toString(this.getClass().getResource("etapeAToDecode.txt"),"UTF-8");
+			text = IOUtils.toString(this.getClass().getResource("etape3ToDecode.txt"),"UTF-8");
 		} catch (IOException e) {			
 			throw new RuntimeException("oups",e);
 		}
