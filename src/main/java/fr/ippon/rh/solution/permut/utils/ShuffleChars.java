@@ -5,9 +5,6 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-import org.fest.util.ToString;
-
-
 public class ShuffleChars {
 	
 	public static void main(String[] args) {
