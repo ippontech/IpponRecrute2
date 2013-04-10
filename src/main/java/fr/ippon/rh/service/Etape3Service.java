@@ -13,11 +13,11 @@ import fr.ippon.rh.permut.EncodeService;
 
 
 @Service
-public class EtapeAService {
+public class Etape3Service {
 
 	List<EncodeService> encodeServicesSequence;
 	
-    public String decriptTextAfterMIUPuzzle() {
+    public String decriptText() {
     
     	String text;
 		try {
@@ -33,7 +33,7 @@ public class EtapeAService {
 
 
     @Inject
-    @Named("listEtapeA")
+    @Named("listEtape3")
     // rq : pour injecter une liste, il faut tricher avec Spring sinon
     // il essaye d'injecter la liste des beans du type demandé plutôt que la liste fabriquée ...
 	public void setEncodeServicesSequence(Object encodeServicesSequence) {

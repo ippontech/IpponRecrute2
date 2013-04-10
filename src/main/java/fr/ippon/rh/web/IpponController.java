@@ -7,7 +7,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import fr.ippon.rh.service.EtapeAService;
+import fr.ippon.rh.service.Etape3Service;
 
 /**
  * Controller principal, servant les pages Web du jeu.
@@ -15,25 +15,27 @@ import fr.ippon.rh.service.EtapeAService;
 @Controller
 public class IpponController {
     
-    private final EtapeAService etapeAService;
+    private final Etape3Service etape3Service;
 
     @Inject
-    public IpponController(EtapeAService etapeAService) {
-        this.etapeAService = etapeAService;
+    public IpponController(Etape3Service etape3Service) {
+        this.etape3Service = etape3Service;
     }
 
-    /**
-     * Affiche l'étape 3.
-     */
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public String debut(Model model) {
-    	return "etapeMIU";
+    	return "etape1";
+    }
+
+    @RequestMapping(value = "/etape2", method = RequestMethod.GET)
+    public String etape2(Model model) {
+    	return "etape2";
     }
     
-    @RequestMapping(value = "/etapeA", method = RequestMethod.GET)
-    public String etapeA(Model model) {
-    	String text = etapeAService.decriptTextAfterMIUPuzzle();
+    @RequestMapping(value = "/etape3", method = RequestMethod.GET)
+    public String etape3(Model model) {
+    	String text = etape3Service.decriptText();
 		model.addAttribute("texte", text);
-    	return "etapeA";
+    	return "etape3";
     }
 }

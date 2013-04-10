@@ -10,7 +10,7 @@ http://www.springframework.org/schema/util http://www.springframework.org/schema
 	
 	<!-- 
 	 -->
-	<util:list id="listEtapeA">
+	<util:list id="listEtape3">
 		<ref bean="encoderX"/>
 		<ref bean="encoderX"/>
 		<ref bean="encoderX"/>
@@ -31,7 +31,7 @@ http://www.springframework.org/schema/util http://www.springframework.org/schema
 	
 	<!--
 	!!! Solution !!
-	<util:list id="listEtapeA">
+	<util:list id="listEtape3">
 		<ref bean="encoder2"/>
 		<ref bean="encoder2"/>
 		<ref bean="encoder1"/>
@@ -45,6 +45,7 @@ http://www.springframework.org/schema/util http://www.springframework.org/schema
 	<bean id="encoder2" class="fr.ippon.rh.permut.impl.EncodeService2"></bean>
 	<bean id="encoder3" class="fr.ippon.rh.permut.impl.EncodeService3"></bean>
 	<bean id="encoder4" class="fr.ippon.rh.permut.impl.EncodeService4"></bean>
+	
 	<bean id="encoderX" class="fr.ippon.rh.permut.impl.EncodeServiceIdempotent"></bean>
 	
 </beans>
