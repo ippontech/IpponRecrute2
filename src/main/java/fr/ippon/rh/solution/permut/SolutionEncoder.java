@@ -32,21 +32,10 @@ public class SolutionEncoder {
 		
 		String str;
 		
-		// test :
-//		String ori = "Suppose there are the symbols M, I, and U which can be combined to produce strings of symbols called \"word\". The MU puzzle asks one to start with the \"axiomatic\" word MI and transform it into the word MU using in each step one of the following transformation rules:    Add a U to the end of any string ending in I. For example: MI to MIU.    Double any string after the M (that is, change Mx, to Mxx). For example: MIU to MIUIU.    Replace any III with a U. For example: MUIIIU to MUUU.    Remove any UU. For example: MUUU to MU.";
-//		str = ori;
-//		System.out.println(str);
-//		str = s1.encode(str);
-//		System.out.println(str);
-//		str = s1.decode(str);
-//		System.out.println(str);
-//		
-//		System.out.println();
-		
 		// Solution du MIU : 221234 ==> TODO : vérifier qu'elle est unique et que c'est la plus courte !
 		// Donc on encode à l'envers par 432122 
 		InputStream inputStream = this.getClass().getResourceAsStream("textToEncode.txt");
-		String input = IOUtils.toString(inputStream);
+		String input = IOUtils.toString(inputStream,"UTF-8");
 		str = input;
 		System.out.println(str);
 		System.out.println();

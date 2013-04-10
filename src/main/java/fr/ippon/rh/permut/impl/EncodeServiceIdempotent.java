@@ -1,6 +1,8 @@
 package fr.ippon.rh.permut.impl;
 
-public class EncodeServiceIdempotent extends BaseEncodeService  {
+import fr.ippon.rh.permut.EncodeService;
+
+public class EncodeServiceIdempotent implements EncodeService  {
 
 	@Override
 	public String encode(String str) {
@@ -11,5 +13,5 @@ public class EncodeServiceIdempotent extends BaseEncodeService  {
 	public String decode(String str) {
 		return str;
 	}
-
+	
 }

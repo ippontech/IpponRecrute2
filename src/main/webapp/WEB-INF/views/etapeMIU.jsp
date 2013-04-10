@@ -6,7 +6,7 @@
     Connaissez-vous le livre &quot;G&ouml;del, Escher, Bach : les brins d'une guirlande &eacute;ternelle&quot; de Douglas Hofstadter (le GEB
     pour les intimes) ?
     <br>
-    Il s'agit de 777 pages de math&eacute;matiques, d'algorithmes, de dessins &eacute;tranges, de jeux de langage, de th&eacute;orie
+    Il s'agit de plus de 800 pages de math&eacute;matiques, d'algorithmes, de dessins &eacute;tranges, de jeux de langage, de th&eacute;orie
     musicale...
     Pas du plus simple acc&egrave;s mais extr&ecirc;mement int&eacute;ressant.
 </p>

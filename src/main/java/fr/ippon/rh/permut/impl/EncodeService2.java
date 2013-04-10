@@ -2,17 +2,10 @@ package fr.ippon.rh.permut.impl;
 
 public class EncodeService2 extends BaseEncodeService  {
 	
-	char[] originalChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz".toCharArray();
-	char[] encodedChars  = "zNsvfxPXoLnKHSyegbWacjqVQtJGIMphFAuTlBOdYrwRkmDCEUiZ".toCharArray();
+	static char[] originalChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz".toCharArray();
+	static char[] encodedChars  = "zNsvfxPXoLnKHSyegbWacjqVQtJGIMphFAuTlBOdYrwRkmDCEUiZ".toCharArray();
 
-	@Override
-	public String encode(String str) {
-		return transpose(str,originalChars,encodedChars);
+	public EncodeService2() {
+		super(originalChars,encodedChars);
 	}
-
-	@Override
-	public String decode(String str) {
-		return transpose(str,encodedChars,originalChars);
-	}
-
 }
