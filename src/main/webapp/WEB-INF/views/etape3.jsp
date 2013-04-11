@@ -1,4 +1,2 @@
-<pre>
 ${texte}
-</pre>
 

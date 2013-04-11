@@ -5,10 +5,10 @@
        xsi:schemaLocation="
 http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
 http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.0.xsd">
-	
-	<!-- Root Context: defines shared resources visible to all other web components -->
-	
-	<!-- 
+
+	<!--
+	    Pour réussir l'étape 3, il faut mettre les beans Spring dans la bonne séquence,
+	    que vous avez dû trouver grâce au puzzle MU !
 	 -->
 	<util:list id="listEtape3">
 		<ref bean="encoderX"/>

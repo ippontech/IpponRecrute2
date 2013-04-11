@@ -1,8 +1,101 @@
-Bravo les petits loups,
-vous avez réussi blablablablabla
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Ippon Recrute 3</title>
+    <meta name="author" content="Julien Dubois" />
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
 
-C'est génial ...
+    <link rel="stylesheet" href="resources/css/bootstrap.min.css">
+    <style>
+        body {
+            padding-top: 60px;
+            padding-bottom: 40px;
+        }
+    </style>
+    <link rel="stylesheet" href="resources/css/bootstrap-responsive.min.css">
+    <link rel="stylesheet" href="resources/css/main.css">
 
-La prochaine étape est de ....
+    <script src="resources/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+</head>
+<body>
+<!--[if lt IE 7]>
+<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+<![endif]-->
 
-etc...
+<!-- This code is taken from http://twitter.github.com/bootstrap/examples/hero.html -->
+
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+            <div class="nav-collapse collapse">
+                <ul class="nav">
+                    <li>
+                        <a class="brand" href="/">Ippon Recrute 3</a>
+                    </li>
+                    <li>
+                        <a href="/etape1">Etape 1</a>
+                    </li>
+                    <li>
+                        <a href="/etape2">Etape 2</a>
+                    </li>
+                    <li class="active">
+                        <a href="/etape3">Etape 3</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+
+    <h1>Bravo !</h1>
+
+    <p>
+        Vous avez vaincu la 3&egrave;me &eacute;dition du concours "Ippon Recrute" !
+        Nous vous proposons donc de postuler chez Ippon Technologies, en envoyant un mail &agrave;
+        "<a href="mailto:recrutement@ippon.fr">recrutement@ippon.fr</a>", avec dans le titre de votre message "[Ippon-Recrute-3]".
+    </p>
+
+    <p>
+        Pour avoir des points bonus lors de votre entretien,
+        si vous avez utilis&eacute; une m&eacute;thode amusante pour r&eacute;soudre l'un des puzzles
+        (par exemple de l'injection de code JavaScript dans la premi&egrave;re &eacute;tape...),
+        vous pouvez d&eacute;crire la m&eacute;thode utilis&eacute;e et rajouter en copie
+        "Julien Dubois &lt;jdubois@ippon.fr&gt;", qui se fera un plaisir d'&eacute;tudier votre code !
+    </p>
+
+    <p>
+        A bient&ocirc;t,
+        <br/><br/>
+        Ippon Technologies.
+    </p>
+    <hr>
+
+    <footer>
+        <p>&copy; Ippon Technologies 2013</p>
+    </footer>
+
+</div> <!-- /container -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="resources/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+
+<script src="resources/js/vendor/bootstrap.min.js"></script>
+
+<script src="resources/js/main.js"></script>
+
+</body>
+</html>
+ 
