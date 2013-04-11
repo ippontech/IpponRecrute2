@@ -16,9 +16,8 @@ import fr.ippon.rh.permut.EncodeService;
 public class Etape3Service {
 
 	List<EncodeService> encodeServicesSequence;
-	
+
     public String decriptText() {
-    
     	String text;
 		try {
 			text = IOUtils.toString(this.getClass().getResource("etape3ToDecode.txt"),"UTF-8");
@@ -36,6 +35,7 @@ public class Etape3Service {
     @Named("listEtape3")
     // rq : pour injecter une liste, il faut tricher avec Spring sinon
     // il essaye d'injecter la liste des beans du type demandé plutôt que la liste fabriquée ...
+    @SuppressWarnings("unchecked")
 	public void setEncodeServicesSequence(Object encodeServicesSequence) {
 		this.encodeServicesSequence = (List<EncodeService>)encodeServicesSequence;
 	}
