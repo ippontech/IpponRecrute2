@@ -186,7 +186,7 @@ function game() {
    }
   }
 
-  lblInfo.innerHTML = 'Jeu démarré<br>Temps: '+time+'s<br>Mouvements: '+movements;
+  lblInfo.innerHTML = 'Jeu d&eacute;marr&eacute;<br>Temps: '+time+'s<br>Mouvements: '+movements;
 
   bufferContext.fillStyle = '#FFFFFF';
   bufferContext.fillRect(0, 0, bufferCanvas.width, bufferCanvas.height);
@@ -205,7 +205,7 @@ function game() {
  } else {
   gameState = 'end';
   if (!perdu) {
-    lblInfo.innerHTML += "<br><br><h5>Puzzle réussi !</h5> Le code pour passer à l'étape 2 est <b>IppEvent</b>.";
+    lblInfo.innerHTML += "<br><br><h5>Puzzle r&eacute;ussi !</h5> Le code pour passer &agrave; l'&eacute;tape 2 est :<h5>IppEvent</h5>";
   }
   document.getElementById('lblEndGame').className = '';
   bufferContext.drawImage(judo, 0, 0);

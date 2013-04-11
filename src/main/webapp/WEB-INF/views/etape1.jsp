@@ -66,17 +66,17 @@
 <section id="howTo">
     <header>Etape 1</header>
     <ul>
-        <li>Vous avez 8 pièces à déplacer pour reconstituer l'image</li>
-        <li>Vous devez réussirà la reconstituer en 60 coups</li>
+        <li>Vous avez 8 pi&egrave;ces &agrave; d&eacute;placer pour reconstituer l'image</li>
+        <li>Vous devez r&eacute;ussir &agrave; la reconstituer en 60 coups</li>
         <li>Et vous avez seulement 60 secondes !</li>
     </ul>
-    Contrôles :<br>
-    Utilisez la souris. Cliquez sur une pièce pour qu'elle se déplace sur la case adjacente, si elle est vide.<br>
+    Contr&ocirc;les :<br>
+    Utilisez la souris. Cliquez sur une pi&egrave;ce pour qu'elle se d&eacute;place sur la case adjacente, si elle est vide.<br>
     <br>
 </section>
 	<button id="btnStartGame" onclick="startGame();">Jouer</button>
-	<label id="lblEndGame" class="hide">GagnÃ© !</label>
-	<canvas id="gameScreen" onmousedown="mouse.listenMousedown(event);" onmouseup="mouse.listenMouseup(event);">Votre navigateur n'est pas compatible avec l'Ã©lÃ©ment canvas (html5).</canvas>
+	<label id="lblEndGame" class="hide">Gagn&eacute; !</label>
+	<canvas id="gameScreen" onmousedown="mouse.listenMousedown(event);" onmouseup="mouse.listenMouseup(event);">Votre navigateur n'est pas compatible avec l'&eacute;l&eacute;ment canvas (html5).</canvas>
 <section id="gameInfo">
     <header>Informations</header>
     <label id="lblInfo">Cliquez pour "Jouer".</label>
