@@ -1,5 +1,6 @@
 package fr.ippon.rh.web;
 
+import fr.ippon.rh.service.Etape2Service;
 import fr.ippon.rh.service.Etape3Service;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -14,12 +15,11 @@ import javax.inject.Inject;
 @Controller
 public class IpponController {
 
-    private final Etape3Service etape3Service;
+    @Inject
+    private Etape2Service etape2Service;
 
     @Inject
-    public IpponController(Etape3Service etape3Service) {
-        this.etape3Service = etape3Service;
-    }
+    private Etape3Service etape3Service;
 
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public String index() {
@@ -33,6 +33,7 @@ public class IpponController {
 
     @RequestMapping(value = "/etape2", method = RequestMethod.GET)
     public String etape2(Model model) {
+        model.addAttribute("texte", etape2Service.decriptText());
         return "etape2";
     }
 
