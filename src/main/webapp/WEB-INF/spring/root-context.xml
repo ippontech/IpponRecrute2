@@ -9,38 +9,26 @@ http://www.springframework.org/schema/util http://www.springframework.org/schema
 	<!--
 	    Pour réussir l'étape 3, il faut mettre les beans Spring dans la bonne séquence,
 	    que vous avez dû trouver grâce au puzzle MU !
-
-	<util:list id="listEtape3">
-		<ref bean="encoderX"/>
-		<ref bean="encoderX"/>
-		<ref bean="encoderX"/>
-		<ref bean="encoderX"/>
-		<ref bean="encoderX"/>
-		<ref bean="encoderX"/>
-		<ref bean="encoderX"/>
-		<ref bean="encoderX"/>
-		<ref bean="encoderX"/>
-		<ref bean="encoderX"/>
-		<ref bean="encoderX"/>
-		<ref bean="encoderX"/>
-		<ref bean="encoderX"/>
-		<ref bean="encoderX"/>
-		<ref bean="encoderX"/>
-		<ref bean="encoderX"/>
-	</util:list>
     -->
-	<!--
-	!!! Solution !!-->
 	<util:list id="listEtape3">
-		<ref bean="encoder2"/>
-		<ref bean="encoder2"/>
-		<ref bean="encoder1"/>
-		<ref bean="encoder2"/>
-		<ref bean="encoder3"/>
-		<ref bean="encoder4"/>
+		<ref bean="encoderX"/>
+		<ref bean="encoderX"/>
+		<ref bean="encoderX"/>
+		<ref bean="encoderX"/>
+		<ref bean="encoderX"/>
+		<ref bean="encoderX"/>
+		<ref bean="encoderX"/>
+		<ref bean="encoderX"/>
+		<ref bean="encoderX"/>
+		<ref bean="encoderX"/>
+		<ref bean="encoderX"/>
+		<ref bean="encoderX"/>
+		<ref bean="encoderX"/>
+		<ref bean="encoderX"/>
+		<ref bean="encoderX"/>
+		<ref bean="encoderX"/>
 	</util:list>
 
-	
 	<bean id="encoder1" class="fr.ippon.rh.permut.impl.EncodeService1"></bean>
 	<bean id="encoder2" class="fr.ippon.rh.permut.impl.EncodeService2"></bean>
 	<bean id="encoder3" class="fr.ippon.rh.permut.impl.EncodeService3"></bean>
