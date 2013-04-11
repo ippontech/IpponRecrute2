@@ -20,13 +20,10 @@
     </style>
     <link rel="stylesheet" href="resources/css/bootstrap-responsive.min.css">
     <link rel="stylesheet" href="resources/css/main.css">
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Happy+Monkey">
-    <link href="http://fonts.googleapis.com/css?family=Londrina+Shadow" rel="stylesheet">
-    <link rel="stylesheet" href="resources/etape1/resolv-the-puzzle.css">
 
     <script src="resources/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 </head>
-<body oncontextmenu="return false;" onload="gameLoop();">
+<body>
 <!--[if lt IE 7]>
 <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
 <![endif]-->
@@ -43,10 +40,10 @@
             </a>
             <div class="nav-collapse collapse">
                 <ul class="nav">
-                    <li>
+                    <li class="active">
                         <a class="brand" href="/">Ippon Recrute 3</a>
                     </li>
-                    <li class="active">
+                    <li>
                         <a href="/etape1">Etape 1</a>
                     </li>
                     <li>
@@ -63,27 +60,32 @@
 
 <div class="container">
 
-<section id="howTo">
-    <header>Etape 1</header>
+    <h1>Bienvenue sur Ippon Recrute v3</h1>
+
+    <p>
+        Ce jeu se d&eacute;roule en 3 &eacute;tapes, &agrave; vous de les r&eacute;soudre...
+    </p>
+
     <ul>
-        <li>Vous avez 8 pièces à déplacer pour reconstituer l'image</li>
-        <li>Vous devez réussirà la reconstituer en 60 coups</li>
-        <li>Et vous avez seulement 60 secondes !</li>
+        <li>
+            <a href="/etape1">Etape 1</a>
+        </li>
+        <li>
+            <a href="/etape2">Etape 2</a>
+        </li>
+        <li>
+            <a href="/etape3">Etape 3</a>
+        </li>
     </ul>
-    Contrôles :<br>
-    Utilisez la souris. Cliquez sur une pièce pour qu'elle se déplace sur la case adjacente, si elle est vide.<br>
-    <br>
-</section>
-	<button id="btnStartGame" onclick="startGame();">Jouer</button>
-	<label id="lblEndGame" class="hide">GagnÃ© !</label>
-	<canvas id="gameScreen" onmousedown="mouse.listenMousedown(event);" onmouseup="mouse.listenMouseup(event);">Votre navigateur n'est pas compatible avec l'Ã©lÃ©ment canvas (html5).</canvas>
-<section id="gameInfo">
-    <header>Informations</header>
-    <label id="lblInfo">Cliquez pour "Jouer".</label>
-</section>
+
+    <hr>
+
+    <footer>
+        <p>&copy; Ippon Technologies 2013</p>
+    </footer>
 
 </div> <!-- /container -->
-<script src="resources/etape1/resolv-the-puzzle.js"></script>
+
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="resources/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
 
@@ -93,3 +95,4 @@
 
 </body>
 </html>
+ 

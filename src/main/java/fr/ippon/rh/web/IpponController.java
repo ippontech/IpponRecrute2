@@ -22,7 +22,12 @@ public class IpponController {
     }
 
     @RequestMapping(value = "/", method = RequestMethod.GET)
-    public String debut(Model model) {
+    public String index() {
+        return "index";
+    }
+
+    @RequestMapping(value = "/etape1", method = RequestMethod.GET)
+    public String etape1(Model model) {
         return "etape1";
     }
 
