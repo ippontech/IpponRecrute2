@@ -19,6 +19,9 @@ public class Etape3Service {
         this.encodeServicesSequence = (List<EncodeService>) encodeServicesSequence;
     }
 
+    /**
+     * Décrypte le texte de l'étape 3.
+     */
     public String decriptText() {
         String text = etape3Texte;
         for (EncodeService s : encodeServicesSequence) {
