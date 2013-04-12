@@ -1,0 +1,12 @@
+MU Puzzle
+Connaissez-vous le bouquin "Gödel, Escher, Bach : les brins d'une guirlande éternelle" de Douglas Hofstadter (le GEB pour les intimes) ?
+Il s'agit de 777 pages de mathématique, d'algo, de dessins étranges, de jeux de langage, de théorie musicale... Pas du plus simple accès mais extrèmement intéressant.
+Tout ceux qui sont arrivés au bout sont super fier d'eux... ;-)
+Au début du livre, l'auteur pose une petit énigme basée sur un système simple : http://en.wikipedia.org/wiki/MU_puzzle
+Nous allons réutiliser le système décrit pour cette première étape de notre jeu :
+A partir des 4 règles de transformation décrite dans la page de wikipedia,
+écrire un algorithme pour trouver les plus petites séquences de transformation permettant d'arriver à "MUIIU" en partant de "MI".
+Ne vous inquiétez pas, il n'y a pas de piège : contrairement au puzzle original, celui-là à bien une réponse ... ;-)
+D'ailleurs attention : il existe plusieurs séquences de taille identique mais minimal, il faut donc toutes les trouver ...
+Une fois les solutions trouvées, prenez les listes des numéros des règles de ces séquences et choississez celle qui forme le plus petit nombre.
+A vous ensuite de trouver comment ce nombre peut vous aider à décoder cette page
