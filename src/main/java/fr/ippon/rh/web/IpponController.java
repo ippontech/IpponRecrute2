@@ -39,8 +39,7 @@ public class IpponController {
 
     @RequestMapping(value = "/etape3", method = RequestMethod.GET)
     public String etape3(Model model) {
-        String text = etape3Service.decriptText();
-        model.addAttribute("texte", text);
+        model.addAttribute("texte", etape3Service.decriptText());
         return "etape3";
     }
 }
